@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: 'interior design, portfolio, residential design, commercial design, luxury interiors',
   authors: [{ name: 'Design Solutions' }],
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.ico',
   },
   openGraph: {
     title: 'Design Solutions',
