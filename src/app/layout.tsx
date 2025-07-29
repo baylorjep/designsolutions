@@ -7,12 +7,15 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Design Solutions - Interior Design Portfolio',
+  title: 'Design Solutions',
   description: 'Beautiful, functional interior design solutions that transform spaces and inspire lives. View our portfolio of residential and commercial projects.',
   keywords: 'interior design, portfolio, residential design, commercial design, luxury interiors',
   authors: [{ name: 'Design Solutions' }],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
-    title: 'Design Solutions - Interior Design Portfolio',
+    title: 'Design Solutions',
     description: 'Beautiful, functional interior design solutions that transform spaces and inspire lives.',
     type: 'website',
   },
