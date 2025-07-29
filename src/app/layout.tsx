@@ -1,33 +1,35 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "DesignSolutions | Interior Design Portfolio",
-  description: "Beautiful, modern interior design solutions for your home. Transform your space with elegant, thoughtful design.",
-  keywords: "interior design, home design, modern interiors, luxury design, residential design",
-  authors: [{ name: "DesignSolutions" }],
+  title: 'Design Solutions - Interior Design Portfolio',
+  description: 'Beautiful, functional interior design solutions that transform spaces and inspire lives. View our portfolio of residential and commercial projects.',
+  keywords: 'interior design, portfolio, residential design, commercial design, luxury interiors',
+  authors: [{ name: 'Design Solutions' }],
   openGraph: {
-    title: "DesignSolutions | Interior Design Portfolio",
-    description: "Beautiful, modern interior design solutions for your home.",
-    type: "website",
+    title: 'Design Solutions - Interior Design Portfolio',
+    description: 'Beautiful, functional interior design solutions that transform spaces and inspire lives.',
+    type: 'website',
   },
-};
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen bg-white">
-          {children}
-        </div>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
-  );
+  )
 }

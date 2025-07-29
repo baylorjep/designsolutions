@@ -1,10 +1,10 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -16,7 +16,7 @@ const config: Config = {
         'warm-white': '#fafafa',
         'soft-gray': '#6b7280',
         'charcoal': '#374151',
-        'cream': '#fefefe',
+        'cream': '#f5f5dc',
         'sage': '#9ca3af',
       },
       spacing: {
@@ -25,8 +25,8 @@ const config: Config = {
         '128': '32rem',
       },
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-in-out',
-        'slide-up': 'slideUp 0.8s ease-out',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -41,5 +41,6 @@ const config: Config = {
     },
   },
   plugins: [],
-};
-export default config; 
+}
+
+export default config 
